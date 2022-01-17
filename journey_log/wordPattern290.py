@@ -1,24 +1,19 @@
 class Solution:
     def wordPattern(pattern: str, s: str) -> bool:
-        # My soln
+        words = s.split(' ')
         map = {}
-        s_list = s.split(" ")
-        size: int = len(pattern)
 
-        if (size % 2 != 0 or len(s_list) % 2 != 0 or len(s_list) != size):
+        if (len(pattern) != len(words)):
+            return False
+        if (len(set(pattern)) != len(set(words))):
             return False
 
-        if (len(set(pattern)) != len(set(s_list))):
-            return False
-
-        for i in range(size // 2):
-            map[pattern[i]] = s_list[i]
-
-        
-        for j in range(size - 1, size // 2 - 1, -1):
-            if (map[pattern[j]] != s_list[j]):
+        for i in range(len(words)):
+            if pattern[i] not in map:
+                map[pattern[i]] = words[i]
+            elif map[pattern[i]] != words[i]:
                 return False
-
+        
         return True
         
 
@@ -41,3 +36,4 @@ assert Solution.wordPattern(pattern4, s4) == False, "Fail test 4"
 pattern5 = "a"
 s5 = "a"
 assert Solution.wordPattern(pattern5, s5) == True, "Fail test 5"
+print("ddfsaf")
