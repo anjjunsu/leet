@@ -3,4 +3,4 @@ project(journey_log)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(journey_log main.cpp)
+add_executable(journey_log containsDuplicate.cpp)
