@@ -26,7 +26,7 @@ class reverseString344 {
     }
 
     private static void recursive(int left, int right, char[] s) {
-        if (left < right) {
+        if (left >= right) {
             return;
         }
         
