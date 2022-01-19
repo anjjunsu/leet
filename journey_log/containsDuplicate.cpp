@@ -9,6 +9,6 @@ public:
 
 int main() {
     ContainsDuplicate demo;
-    
+
     return 0;
 }

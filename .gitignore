@@ -2,3 +2,4 @@ cmake-build-debug/
 journey_log/.idea/
 journey_log/cmake-build-debug/
 .idea/
+journey_log/CMakeLists.txt
