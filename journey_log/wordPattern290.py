@@ -36,4 +36,3 @@ assert Solution.wordPattern(pattern4, s4) == False, "Fail test 4"
 pattern5 = "a"
 s5 = "a"
 assert Solution.wordPattern(pattern5, s5) == True, "Fail test 5"
-print("ddfsaf")
