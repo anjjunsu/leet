@@ -1,9 +1,6 @@
-p = "abba"
-s = "dog cat cat dog"
+n = int(input(" n = ?   "))
+result = n
+for x in range(0,n-1):
+    result += 2
 
-words, w_p = s.split(" "), dict()
-
-print(p)
-print(s)
-print(words)
-print(w_p)
+print(result)
