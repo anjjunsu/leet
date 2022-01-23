@@ -36,17 +36,17 @@ private:
                               {'M', 1000}};
 };
 
-int main() {
-    Solution soln;
-
-    string s1 = "III";
-    cout << soln.romanToInt(s1) << endl;
-
-    string s2 = "LVIII";
-    cout << soln.romanToInt(s2) << endl;
-
-    string s3 = "MCMXCIV";
-    cout << soln.romanToInt(s3) << endl;
-
-    return 0;
-}
+//int main() {
+//    Solution soln;
+//
+//    string s1 = "III";
+//    cout << soln.romanToInt(s1) << endl;
+//
+//    string s2 = "LVIII";
+//    cout << soln.romanToInt(s2) << endl;
+//
+//    string s3 = "MCMXCIV";
+//    cout << soln.romanToInt(s3) << endl;
+//
+//    return 0;
+//}
