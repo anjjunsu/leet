@@ -15,7 +15,7 @@ class s {
                     }
                     System.out.println();
                     break;
-                                }                // End the loop early.
+                                }         // End the loop early.
                 int temp = A[j];          // LINE A.
                 A[j] = A[j/2];            // LINE B.
                 A[j/2] = temp;            // LINE C.
@@ -28,8 +28,9 @@ class s {
             }
             System.out.println();
             }
-        }
+        } 
     }
+
 
     
 
