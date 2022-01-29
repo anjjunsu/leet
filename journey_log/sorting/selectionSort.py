@@ -23,7 +23,7 @@ def selectionSort(x):
         x[i], x[indexMin] = x[indexMin], x[i]
         
 if __name__ == "__main__" :
-    list = [91,32,7,53,56,52]
+    list = [10,41,37,15,33,2]
     print("List before sorting : ", end="")
     print(list)
 
