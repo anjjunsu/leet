@@ -40,23 +40,23 @@ public:
     }
 };
 
-int main() {
-    ThreePointer_sorting tb;
-    vector<char> play_list = { 'T', 'K', 'T', 'A', 'K', 'B', 'Q', 'T', 'K' , 'a', 'd', 'K', 'K'};
-
-    cout << "Play list before sorting :";
-    for (char i : play_list) {
-        cout << i << " ";
-    }
-    cout << endl;
-    cout << "============================================" << endl;
-
-    tb.sort(play_list);
-
-    cout << "============================================" << endl;
-    cout << ">> Play list after soring :";
-    for (char j : play_list) {
-        cout << j << " ";
-    }
-    cout << endl;
-}
+//int main() {
+//    ThreePointer_sorting tb;
+//    vector<char> play_list = { 'T', 'K', 'T', 'A', 'K', 'B', 'Q', 'T', 'K' , 'a', 'd', 'K', 'K'};
+//
+//    cout << "Play list before sorting :";
+//    for (char i : play_list) {
+//        cout << i << " ";
+//    }
+//    cout << endl;
+//    cout << "============================================" << endl;
+//
+//    tb.sort(play_list);
+//
+//    cout << "============================================" << endl;
+//    cout << ">> Play list after soring :";
+//    for (char j : play_list) {
+//        cout << j << " ";
+//    }
+//    cout << endl;
+//}

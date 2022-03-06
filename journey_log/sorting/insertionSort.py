@@ -20,7 +20,7 @@ def insertion_sort(x):
         x[j+1] = key
 
 def main():
-    list = [3, 6, 4, 1, 4, 10]
+    list = [57,23,49,25,85,25]
     insertion_sort(list)
 
 
