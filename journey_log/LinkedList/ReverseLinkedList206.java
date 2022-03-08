@@ -1,3 +1,5 @@
+import javax.management.ListenerNotFoundException;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -20,5 +22,21 @@ class Solution {
         }
 
         return prevNode;
+    }
+
+    public ListNode recursiveReverse(ListNode head) {
+        return helper(head, null);
+    }
+
+    private ListNode helper(ListNode node, ListNode prevNode) {
+        if (node == null) {
+            return prevNode;
+        }
+
+        ListNode nextNode = node.next;
+        node.next = prevNode;
+        prevNode = node;
+        
+        return helper(nextNode, prevNode);
     }
 }
