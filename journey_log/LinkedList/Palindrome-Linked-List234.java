@@ -28,7 +28,7 @@ class Solution {
         int right = copy.size() - 1;
 
         while (left < right) {
-            if (copy.get(left) != copy.get(right))
+            if (!copy.get(left).equals(copy.get(right)))
                 return false;
 
             left++;
