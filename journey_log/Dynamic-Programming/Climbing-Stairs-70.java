@@ -1,22 +1,45 @@
-// Dynamic programming 
+// Dynamic programming with contant space
 class Solution {
     public int climbStairs(int n) {
-        
+
         if (n == 1) return 1;
         if (n == 2) return 2;
-        
-        int[] dp = new int[n + 1];
 
-        dp[1] = 1;
-        dp[2] = 2;
+        int first = 1;
+        int second = 2;
+        int sum = first + second;
 
         for (int i = 3; i <= n; i++) {
-            dp[i] = dp[i - 2] + dp[i - 1];
+            sum = first + second;
+
+            first = second;
+            second = sum;
         }
 
-        return dp[n];
+        return sum;
     }
 }
+
+
+// // Dynamic programming 
+// class Solution {
+//     public int climbStairs(int n) {
+        
+//         if (n == 1) return 1;
+//         if (n == 2) return 2;
+
+//         int[] dp = new int[n + 1];
+
+//         dp[1] = 1;
+//         dp[2] = 2;
+
+//         for (int i = 3; i <= n; i++) {
+//             dp[i] = dp[i - 2] + dp[i - 1];
+//         }
+
+//         return dp[n];
+//     }
+// }
 
 // // Recursion + Memoization
 // class Solution {
